@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+   box-sizing:border-box;
+
+}
+body{
+    /* height:100vh; */
+    /* background-color: rgb(230, 230, 230); */
+    background-image:url("pics/bg1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* font-family:'Merriweather Sans', sans-serif; */
+
+    }
+h1{
+    margin-top:1.5rem;
+    font-size:4rem;
+    width:45%;
+    color:rgb(54, 131, 246);
+    text-align:center;
+}
+h2{
+    color:rgb(89, 89, 210);
+    font-size:3rem;
+    text-align: center;
+}
+.card{
+    margin: 2rem;
+text-align:center;
+}
+
+.flex{
+    display:flex;
+}
+
+img{
+    box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.2);
+border-radius:500px;
+/* width:100%; */
+/* display:block; */
+
+}
+.navbar ul {
+    /* margin:0; */
+/* padding:1.4em; */
+    list-style-type:none;
+    display:flex;
+justify-content:space-around;
+align-items:center;
+background-color: rgb(43, 155, 203);
+opacity:0.75;
+padding:1rem;
+
+}
+.navbar ul li{
+    /* flex:10%; */
+    margin:10px;
+}
+
+.navbar a{
+    font-size:1.5em;
+    text-decoration:none;
+    color:rgb(244, 240, 240);
+    
+}
+.navbar a:hover{
+    background-color:rgb(167, 208, 234);
+    padding:1em;
+    /* border-radius:20px solid red; */
+}
+
+.content{
+    margin:1.5rem;
+    font-size:1.5rem;
+    text-align:start ;
+    box-shadow: 1px 0px 1px 0 rgba(0, 0, 0, 0.1);
+
+}
+.menu{
+    display:none;
+}
+@media (max-width:950px){
+    .flex{ display:block;}
+}
+@media (max-width:650px){
+   .navbar ul{
+        display:none;
+    }
+    .menu {
+        display:inline-block;
+        position:absolute;
+       right:0;
+       width:30px;
+       /* border:1px solid; */
+       border-radius:0px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    }
+    h1{
+        width:100%;
+    }
+    img{
+        width:300px;
+    }
+    .content{
+        margin:1rem;
+        font-size:1.1rem;
+    }
+    .card{
+        margin: 1rem;
+    text-align:center;
+    }
+}

@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+body{
+    background-image:url("pics/subscribe.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+}
+
+.navbar{
+    /* position:absolute; */
+/* transition:1px ;
+ */
+ /* animation-name:example; */
+    /* display:inline-block; */
+    /* background-color:rgba(32, 24, 33, 0.5); */
+    background-color:rgb(234, 176, 244);
+/* opacity:; */
+/* position:sticky; */
+    /* transition:width 8s; */
+ /* animation-duration: 2s ; */
+ /* animation-delay: -0.5s ; */
+
+/* position:sticky;
+top:0; */
+}
+
+
+.navbar ul {
+    /* margin:0; */
+padding:1.4em;
+    list-style-type:none;
+    display:flex;
+justify-content:space-around;
+align-items:center;
+
+}
+.navbar ul li{
+    /* flex:10%; */
+    margin:10px;
+}
+
+.navbar a{
+    font-size:1.5em;
+    text-decoration:none;
+    color:white;
+    
+}
+.navbar a:hover{
+    background-color:rgb(218, 154, 225);
+    padding:1em;
+    /* border-radius:20px solid red; */
+}
+ul input{
+    padding:10px;
+    border-radius:2em;
+}
+.row{
+display:flex;
+font-size:x-large;
+padding:1.5em;
+
+}
+h1{
+    font-size:50px;
+    text-align:center;
+    color:rgb(190, 87, 43);
+    /* background-color:rgb(190, 90, 178); */
+    padding:1.5rem;
+    font-family:cursive;
+    
+}
+.side{
+    flex:75%;
+/* margin:1em; */
+}
+.main{
+flex:25%;
+padding:1.2em;
+
+}
+h3{
+    font-family:cursive;
+    margin-bottom:10px;
+}
+.jenny{
+    width:100%;
+    padding:1em;
+}
+input[type=text]{
+   width:35%;
+   padding:1em 2em;
+    margin:1em;
+    /* display:block; */
+    border-radius:5px 20px 
+    /* border:1px solid purple; */
+}
+input[type=button]{
+padding:1em;
+margin-left:6em;
+width:16%;
+cursor:pointer;
+margin:2em;
+background-color:greenyellow;
+border-radius: 5px 15px;
+}
+
+.info{
+    /* border:2px solid black; */
+    text-align:center;
+    
+
+}
+.logo{
+    width:50px;
+    margin:0.5em;
+}
+@media only screen and (max-width:992px){
+    input[type=button]{
+        /* padding:0px;
+         */
+         width:22%;
+    }
+    input[type=text]{
+        width:40%;
+    }
+}
+@media only screen and (max-width:768px){
+
+    
+    .row
+    {
+        display:block;
+    }
+}
+@media only screen and (max-width:600px){
+    input[type=button]{
+        width:50%;
+    }
+    input[type=text]{
+        width:100%;
+    }
+
+}

@@ -1,0 +1,138 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url("pics/foodbg.webp");
+    /* opacity:0.4; */
+background-size:cover;
+background-repeat: no-repeat;
+background-position:center;
+background-attachment:fixed;
+
+}
+.navbar{
+    /* position:absolute; */
+/* transition:1px ;
+ */
+ animation-name:example;
+    /* display:inline-block; */
+    background-color:rgba(11, 5, 5,0.5);
+    /* transition:width 8s; */
+ animation-duration: 1.5s ;
+ animation-delay: -0.5s ;
+
+position:sticky;
+top:0;
+}
+
+@keyframes example{
+    from{width:0;}
+    to {width:100%;}
+}
+.navbar ul {
+    /* margin:0; */
+/* padding:1.4em; */
+    list-style-type:none;
+    display:flex;
+justify-content:space-around;
+align-items:center;
+
+}
+.navbar ul li{
+    /* flex:10%; */
+    margin:10px;
+}
+
+.navbar a{
+    font-size:1.5em;
+    text-decoration:none;
+    color:white;
+    
+}
+.navbar a:hover{
+    background-color:black;
+    padding:1em;
+    /* border-radius:20px solid red; */
+}
+ul input{
+    padding:10px;
+    border-radius:2em;
+}
+.menu{
+    display:none;
+}
+
+
+#home
+{
+    /* font-style: italic; */
+    color:rgba(75, 34, 6, 0.9);
+   font-size:1.6rem;
+   font-family:Arial, Helvetica, sans-serif;
+    /* position:absolute;
+right:35vw;
+   bottom:25vh; */
+text-align:center;
+padding-top:3rem;
+}
+.greet {
+    /* display:inline-block; */
+    /* border:2px solid; */
+    display:flex;
+    justify-content:center;
+/* font-family: cursive; */
+   font-size:2.7rem;
+    
+}
+
+@media only screen and (max-width:992px)
+   {
+       .foodbazaar{
+         /* display:none; */
+         text-align:center;
+       }
+      /* ul
+      {
+        flex-direction:column;
+      } */
+      .navbar a{
+          font-size:1em;
+      }
+      #home{
+          padding-top:1.5em;
+          font-size:1.5rem;
+      }
+      .greet{
+          font-size:2rem;
+      }
+    }  
+    @media only screen and (max-width:768px) {
+        #home{
+            padding-top:0.8rem;
+        }
+    }
+    @media only screen and (max-width:600px)
+{
+    .foodbazaar{
+        width:70px;
+    }
+    ul
+      {
+        flex-direction:row;
+      }
+    .navbar a{
+        display:none;
+
+    }
+    .menu{
+        position:absolute;
+        right:0px;
+        display:block;
+    }
+    .navbar{
+        background-color:rgba(207, 222, 235,0.6);
+    }
+}

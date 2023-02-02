@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  .navbar{
+    /* position:absolute; */
+  
+    /* display:inline-block; */
+    background-color:rgba(236, 191, 223, 0.5);
+  
+  }
+  
+  .navbar ul {
+    
+    list-style-type:none;
+    display:flex;
+  justify-content:space-around;
+  align-items:center;
+  
+  }
+  .navbar ul li{
+    /* flex:10%; */
+    margin:10px;
+  }
+  
+  .navbar a{
+    font-size:1.5em;
+    text-decoration:none;
+    color:rgb(12, 12, 12);
+    padding:2.5rem;
+    
+  }
+  ul input{
+    padding:10px;
+    border-radius:2em;
+  }
+  .menu{
+    display:none;
+  }
+  body{
+    background-image:url("pics/bg1.webp");
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+  @media only screen and (max-width:992px)
+     {
+         .foodbazaar{
+           display:none;
+         }
+        /* ul
+        {
+          flex-direction:column;
+        } */
+        .navbar a{
+            font-size:1em;
+        }
+        #home{
+            padding:4em;
+            font-size:1.5rem;
+        }
+      }   
+      @media only screen and (max-width:600px)
+  {
+      .foodbazaar{
+          width:70px;
+      }
+      ul
+      {
+        flex-direction:row;
+      }
+    .navbar a{
+        display:none;
+
+    }
+    .menu{
+        position:absolute;
+        right:0px;
+        display:block;
+    }
+}
+@media  screen and (min-width:568px) {
+  .cards-wrapper{
+    display: flex;
+  }
+  
+
+.cards-wrapper{
+  display: flex;
+ 
+}
+.card{
+  margin: 0  .5em;
+  width: calc(100%/3);
+}
+}
+@media  screen and (max-width: 567px) {
+  .card:not(:first-child){
+    display: none;
+}
+
+}
+.image-wrapper{
+height: 22vw;
+margin: 0 auto;
+}
+.image-wrapper img{
+max-width: 100%;
+max-height:100%;
+}    

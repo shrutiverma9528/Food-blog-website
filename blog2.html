@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a24bdba8bd.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-image:url("pics/bg1.webp");
+        background-position:center;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+
+    .navbar {
+        /* position:absolute; */
+
+        /* display:inline-block; */
+        background-color: rgba(236, 191, 223, 0.5);
+
+    }
+
+    .navbar ul {
+        /* margin:0; */
+        /* padding:1.4em; */
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .navbar ul li {
+        /* flex:10%; */
+        margin: 10px;
+    }
+
+    .navbar a {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: rgb(12, 12, 12);
+
+    }
+
+    ul input {
+        padding: 10px;
+        border-radius: 2em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media only screen and (max-width:992px) {
+        .foodbazaar {
+            display: none;
+        }
+
+        /* ul
+      {
+        flex-direction:column;
+      } */
+        .navbar a {
+            font-size: 1em;
+        }
+
+        #home {
+            padding: 4em;
+            font-size: 1.5rem;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        .foodbazaar {
+            width: 70px;
+        }
+
+        ul {
+            flex-direction: row;
+        }
+
+        .navbar a {
+            display: none;
+        }
+
+.menu {
+    position: absolute;
+    right: 0px;
+    display: block;
+}
+}
+
+.recipe-image{
+display: grid;
+padding-left:4rem;
+padding-top:2rem;
+padding-right:2rem;
+
+/* gap: rem; */
+
+}
+.noodles{
+height: 300px;
+border-radius: 5px ;
+margin-left: 10%;
+box-shadow:12px 12px 12px 0px rgba(0,0,0,0.5);
+}
+.recipe-icons{
+display: flex;
+grid-template-columns: repeat(3 1fr);
+gap: 2rem;
+margin: 2rem 0;
+text-align: center;
+}
+.recipe-icons i{
+font-size: 1.5rem;
+color: rgb(212, 86, 107);
+}
+.recipe-icons h5, .recipe-icons p{
+        margin-bottom: 0;
+        font-size: 0.85rem;
+
+    }
+    .recipe-icons p{
+        color: rgb(14, 13, 13);
+
+    }
+    @media screen and (min-width:992px) {
+        .recipe-image{
+            grid-template-columns: 4fr 5fr;
+            align-items: center;
+        }
+        
+    }
+    
+    .recipe-image p{
+        font-size: larger;
+    }
+    .recipe-content{
+        margin-left: 10%;
+
+    }
+    .recipe-content p{
+        font-size: larger;
+    }
+
+</style>
+
+<body>
+    <div class="navbar">
+
+        <ul>
+
+            <img class="foodbazaar" src="pics/foodbazaar.png" width="95px">
+
+            <!-- <li><i class="fas fa-bars"></i></li> -->
+            <img class="menu" src="pics/menu.png" >
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="recipes.html">RECIPES</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <!-- <li><a href="#search">SEARCH</a></li> -->
+
+
+        </ul>
+
+    </div>
+    <br><br>
+    <main class="page">
+        <div class="recipe-page">
+            <section class="recipe-image">
+                <!-- <img src="pics/creamy noodles.jpg" class="noodles" > -->
+            
+                <img src="pics/pazza1.jpg" class="noodles">
+                
+                <article >
+                    <h2>Veg Pizza</h2>
+                    <p>Hot, cheesy pizza loaded with your favorite veggies is one of the most fun and easy dinners to make at home. With just a few key tips you can create a restaurant-quality crust, and treat yourself to the best homemade pizza that’s completely customizable to your tastes. Plan your next pizza party using my foolproof Pizza recipe, with step-by-step photos for making perfect and best veggie pizza from scratch every time!
+
+
+                </p>
+                        <div class="recipe-icons">
+                            <article>
+                                <i class="fas fa-clock"></i>
+                                <h5>prep time</h5>
+                                <p>30 min</p>
+                            </article>
+                            <article>
+                                <i class="far fa-clock"></i>
+                                <h5>cook time</h5>
+                                <p>45 min</p>
+                            </article>
+                            <article>
+                                <i class="far fa-user"></i>
+                                <h5>servings</h5>
+                                <p>6 servings</p>
+                            </article>
+                        </div>
+                       
+                </article>
+            </section>
+            <br><br>
+            <section class="recipe-content">
+                <article>
+                    <h2>Instructions</h2>
+                    <div class="steps">
+                        <p>
+                            <p> 1. First, in a large bowl mix together 1.5 teaspoons instant yeast and ½ teaspoon of sugar.
+
+                                Usually instant yeast can be mixed directly in the flour or in water at room temperature. But I am detailing this method as it can be implemented if you are using dry active yeast. Add 2 teaspoons dry active yeast for this pizza crust recipe.  </p> 
+                              <p>2. Add 1 cup of lukewarm water (44 degrees Celsius) and stir. Set aside and let the yeast activate. </p> 
+                              <p>3. You should start to see the yeast mixture bubbling up and doubling in size after about 10 to 15 minutes.
+
+                            </p> 
+                            <p>4. To make the pizza right away, portion and flatten the dough to a disk. In the below photo, you can see that the dough has leavened well, with stringy strands and many air pockets that will make a chewy crust.</p>
+                               
+                           </p>
+                       </div>
+                   </article>
+               </section>
+           </div>
+       </main>
+       
+   </body>
+   
+   </html>

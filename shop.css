@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   
+}
+body{
+    background-image:url("pics/shop.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    font-size:1.2em;
+}
+.navbar{
+    background-color:black;
+}
+.navbar ul {
+    /* margin:0; */
+/* padding:1.4em; */
+    list-style-type:none;
+    display:flex;
+justify-content:space-around;
+align-items:center;
+background-color: rgb(40, 94, 175);
+opacity:0.75;
+padding:1rem;
+
+}
+.navbar ul li{
+    /* flex:10%; */
+    margin:10px;
+}
+
+.navbar a{
+    font-size:1.5em;
+    text-decoration:none;
+    color:rgb(244, 240, 240);
+    
+}
+.navbar a:hover{
+    background-color:rgb(167, 208, 234);
+    padding:1em;
+    /* border-radius:20px solid red; */
+}
+.menu{
+    display:none;
+}
+HR{
+    width:400px;
+    border:1.5px solid ;
+}
+.flex{
+    display:flex;
+    padding-left:5em;
+    padding-top:5em;
+}
+.categories{
+    /* padding:3.5em; */
+flex:40%;
+}
+.items{
+flex:60%;
+
+}
+.heading{margin:1.4rem;
+    font-size:1.5em;
+    cursor: pointer;
+}
+
+
+a{
+    color:rgb(29, 28, 28);
+    text-decoration:none ;
+}
+.card{
+    box-shadow:3px 3px 3px 3px rgba(0,0,0,0.4); 
+/* display:flex; */
+border-radius:10px ;
+background-color:aliceblue;
+display:inline-block;
+text-align:center;
+margin:15px;
+}
+.image{
+    width:200px;
+    height:200px;
+    margin:5px;
+    /* padding:1rem; */
+}
+#kitchen-essentials{
+    display:none;
+}
+#pantry-items{
+    display:none;
+}
+#photography{
+    /* display:none; */
+}
+h1{
+    color:rgb(18, 18, 159);
+    font-size:2.2rem;
+}

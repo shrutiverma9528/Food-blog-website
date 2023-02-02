@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a24bdba8bd.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-image:url("pics/bg1.webp");
+        background-position:center;
+        background-size:cover;
+        background-attachment: fixed;
+
+    }
+    .navbar {
+        /* position:absolute; */
+
+        /* display:inline-block; */
+        background-color: rgba(236, 191, 223, 0.5);
+
+    }
+
+    .navbar ul {
+        /* margin:0; */
+        /* padding:1.4em; */
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .navbar ul li {
+        /* flex:10%; */
+        margin: 10px;
+    }
+
+    .navbar a {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: rgb(12, 12, 12);
+
+    }
+
+    ul input {
+        padding: 10px;
+        border-radius: 2em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media only screen and (max-width:992px) {
+        .foodbazaar {
+            display: none;
+        }
+
+        /* ul
+      {
+        flex-direction:column;
+      } */
+        .navbar a {
+            font-size: 1em;
+        }
+
+        #home {
+            padding: 4em;
+            font-size: 1.5rem;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        .foodbazaar {
+            width: 70px;
+        }
+
+        ul {
+            flex-direction: row;
+        }
+
+        .navbar a {
+            display: none;
+        }
+
+.menu {
+    position: absolute;
+    right: 0px;
+    display: block;
+}
+}
+
+.recipe-image{
+display: grid;
+padding-left:4rem;
+padding-top:2rem;
+padding-right:2rem;
+
+/* gap: rem; */
+
+}
+.noodles{
+height: 300px;
+border-radius: 5px ;
+margin-left: 10%;
+box-shadow:12px 12px 12px 0px rgba(0,0,0,0.5);
+}
+.recipe-icons{
+display: flex;
+grid-template-columns: repeat(3 1fr);
+gap: 2rem;
+margin: 2rem 0;
+text-align: center;
+}
+.recipe-icons i{
+font-size: 1.5rem;
+color: rgb(212, 86, 107);
+}
+.recipe-icons h5, .recipe-icons p{
+        margin-bottom: 0;
+        font-size: 0.85rem;
+
+    }
+    .recipe-icons p{
+        color: rgb(14, 13, 13);
+
+    }
+    @media screen and (min-width:992px) {
+        .recipe-image{
+            grid-template-columns: 4fr 5fr;
+            align-items: center;
+        }
+        
+    }
+    
+    .recipe-image p{
+        font-size: larger;
+    }
+    .recipe-content{
+        margin-left: 10%;
+
+    }
+    .recipe-content p{
+        font-size: larger;
+    }
+
+</style>
+
+<body>
+    <div class="navbar">
+
+        <ul>
+
+            <img class="foodbazaar" src="pics/foodbazaar.png" width="95px">
+
+            <!-- <li><i class="fas fa-bars"></i></li> -->
+            <img class="menu" src="pics/menu.png" >
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="recipes.html">RECIPES</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <!-- <li><a href="#search">SEARCH</a></li> -->
+
+
+        </ul>
+
+    </div>
+    <br><br>
+    <main class="page">
+        <div class="recipe-page">
+            <section class="recipe-image">
+                <!-- <img src="pics/creamy noodles.jpg" class="noodles" > -->
+            
+                <img src="pics/noodles.jpg" class="noodles">
+                
+                <article >
+                    <h2>Japanese ramen noodle </h2>
+                    <p> Ramen is a Japanese noodle soup, with a combination of a rich flavoured broth, one of a variety of types of noodle and a selection of meats or vegetables, often topped with a boiled egg.
+                        Noodles are a staple of Japanese cuisine. They are often served chilled with dipping sauces, or in soups or hot dishes.[1
+                        Ramen noodles have a firm texture and are usually pale yellow in color. The noodles may vary in shape, width, and length.
+                  
+                       
+                    </p>
+                        <div class="recipe-icons">
+                            <article>
+                                <i class="fas fa-clock"></i>
+                                <h5>prep time</h5>
+                                <p>20 min</p>
+                            </article>
+                            <article>
+                                <i class="far fa-clock"></i>
+                                <h5>cook time</h5>
+                                <p>25 min</p>
+                            </article>
+                            <article>
+                                <i class="far fa-user"></i>
+                                <h5>servings</h5>
+                                <p>3 servings</p>
+                            </article>
+                        </div>
+                       
+                </article>
+            </section>
+            <br><br>
+            <section class="recipe-content">
+                <article>
+                    <h2>Instructions</h2>
+                    <div class="steps">
+                        <p>
+                            <p> 1.   Mix 700ml chicken stock, 3 halved garlic cloves, 4 tbsp soy
+                                sauce, 1 tsp Worcestershire sauce, a sliced thumb-sized piece of
+                                ginger, ½ tsp Chinese five spice, pinch of chilli powder and 300ml
+                                water in a stockpot or large saucepan, bring to the boil, then
+                                reduce the heat and simmer for 5 mins.  </p> <br>
+                              <p>2.Taste the stock – add 1 tsp white sugar or a little more soy sauce
+                                to make it sweeter or saltier to your liking.
+                                Cook 375g ramen noodles following the pack instructions, then
+                                drain and set aside.
+                            Slice 400g cooked pork or chicken, fry in 2 tsp sesame oil until
+                                just starting to brown, then set aside.
+                                </p> <br>
+                              <p>3.Divide the stock between the bowls, then sprinkle over 1
+                                shredded nori sheet, sliced spring onions or shallots and a
+                                sprinkle of sesame seeds. Allow the spinach to wilt slightly before
+                                serving.</p> 
+                               
+                           </p>
+                       </div>
+                   </article>
+               </section>
+           </div>
+       </main>
+       
+   </body>
+   
+   </html>

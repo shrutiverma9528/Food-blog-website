@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<script>
+    function display(){
+        document.getElementById("kitchen-essentials").style.display='block';
+       
+        document.getElementById("pantry-items").style.display='none';
+        document.getElementById("photography").style.display='none';
+
+    }
+    function displaypantry(){
+        document.getElementById("kitchen-essentials").style.display='none';
+
+        document.getElementById("pantry-items").style.display='block';
+        document.getElementById("photography").style.display='none';
+
+    }
+    function displayphoto(){
+        document.getElementById("kitchen-essentials").style.display='none';
+        document.getElementById("pantry-items").style.display='none';
+        document.getElementById("photography").style.display='block';
+
+    }
+    function displayall(){
+        document.getElementById("kitchen-essentials").style.display='block';
+        document.getElementById("pantry-items").style.display='block';
+        document.getElementById("photography").style.display='block';
+
+    }
+
+</script>
+<body>
+    <div class="navbar">
+        <ul> 
+         <!-- <img class="foodbazaar"src="pics/foodbazaar.png"  width="95px"> -->
+           
+             <img class="menu" src="pics/menu.png" width="30px">
+            
+             <li><a href="home.html">HOME</a></li>
+             <li><a href="about.html">ABOUT</a></li>
+             <li><a href="recipes.html">RECIPES</a></li>
+             <li><a href="shop.html">SHOP</a></li>
+             <li><a href="subscribe.html">SUBSCRIBE</a></li>
+             <li><a href="contact1.html">CONTACT</a></li>
+     
+         </ul>     
+     </div>
+     <section class="flex">
+        <div class="categories">
+           <h1>CATEGORIES</h1>
+                <p class="heading" onclick="display()">
+                    <!-- <a href="" >KITCHEN ESSENTIALS</a> -->
+               KITCHEN ESSENTIALS</p>
+                <HR>
+                <p class="heading" onclick="displaypantry()">
+              PANTRY ITEMS</p>
+                </p><HR>
+                <p class="heading" onclick="displayphoto()">
+            PHOTOGRAPHY AND LIGHTING EQUIPMENT</p>
+              <HR>
+                <p class="heading" onclick="displayall()">
+                   ALL</p>
+               <HR> 
+        </div>  
+        <div class="items">
+            <h1>FOODBAZAAR SHOP</h1>
+            <div id="kitchen-essentials">
+                <div class="card">
+                <a href="https://a.co/d/3BEEQFE" target="_blank">
+                <img class="image" src="pics/baking_pan.jpg" >
+                <p>Baking Pan</p></a>
+                 </div>
+                <div class="card">
+             <a href="https://a.co/d/bnjdajn" target="_blank">
+                <img class="image" src="pics/frypan.jpg" >
+                <p>Fry Pan</p></a>
+                </div>
+                <div class="card">
+             <a href="https://a.co/d/5evpbkC" target="_blank">
+                <img class="image" src="pics/bowls.jpg" >
+                <p>Bowls</p></a>
+                </div>
+                <div class="card">
+                    <a href="https://a.co/d/d5aj8yo" target="_blank">
+                <img class="image" src="pics/ceramic cookware.jpg" ><p>Ceramic Cookware</p></a>
+                </div>
+                <div class="card">
+                    <a href="https://a.co/d/0i5XBzh" target="_blank">
+                <img class="image" src="pics/french pan.jpg" >
+                <p>French Oven</p></a>
+                    </div>
+                <div class="card">
+                    <a href="https://a.co/d/4V1o8Z6" target="_blank">
+                <img class="image" src="pics/cutting_board.jpg" >
+            <p>Cutting-Board</p></a>
+                </div>
+            </div>
+            <div id="pantry-items">
+                <div class="card">
+                    <a href="https://a.co/d/9XetBks" target="_blank"><img class="image" src="pics/arrowroot starch.jpg" >
+                    <p>Arrowroot Starch</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/4mcWOc9" target="_blank"><img class="image" src="pics/almond.jpg" >
+                    <p>Almond</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="" target="_blank"><img class="image" src="pics/chocolate chips.webp" >
+                    <p>Chocolate Chips</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/hpd7zAm" target="_blank"><img class="image" src="pics/Avocado-Oil.png" >
+                    <p>Avocado-Oil</a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/4drYgME"><img class="image" src="pics/Baking-Powder.png" >
+                    <p>Baking Powder</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/cuEssb0" target="_blank"><img class="image" src="pics/Baking-Soda.jpg" >
+                    <p>Baking Soda</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/8d27R3T" target="_blank"><img class="image" src="pics/brown-rice-flour.jpg" >
+                    <p>Brown-Rice-Flour</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/bnDCaBn" target="_blank"><img class="image" src="pics/Brown-Rice-Noodles-.jpg" >
+                    <p>Brown-Rice-Noodles</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/8pVDhOG" target="_blank"><img class="image" src="pics/Cacao-Butter.webp" >
+                    <p>Cacao Butter</p></a>
+                 </div>
+            </div>
+            <div id="photography">
+                <div class="card">
+                    <a href="https://a.co/d/g6Zutsw" target="_blank"><img class="image" src="pics/camera_backpack.jpg" >
+                    <p>Camera Backpack</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/fjT9VBQ" target="_blank"><img class="image" src="pics/canon mark.jpg" >
+                    <p>Canon Mark</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/ikFIgHx" target="_blank"><img class="image" src="pics/clamp_holder.webp" >
+                    <p>Clamp holder</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/2l0XpbC" target="_blank"><img class="image" src="pics/flash light.png" >
+                    <p>Flash Light</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/c4vWXAU" target="_blank"><img class="image" src="pics/small softbox.jpg" >
+                    <p>Small Softbox</p></a>
+                 </div>
+                 <div class="card">
+                    <a href="https://a.co/d/g7bbEnD" target="_blank"><img class="image" src="pics/boom_stand.png" >
+                    <p>Boom Stand</p></a>
+                 </div>
+
+            </div>
+        </div> 
+     </section>      
+</body>
+</html>
